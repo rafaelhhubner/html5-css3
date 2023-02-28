@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+    background-color: #10cecbfd;
+    font: normal 22pt Arial;
+    margin: 0px 0px 0px 0px;    
+}
+
+main {
+    background-color: white;
+    width: 1300px;
+    margin: 0px auto auto auto;
+    padding: 20px
+}
+
+header {
+    background-image: linear-gradient(#0CABA8, #015958);
+    color: white;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}   
+
+header > p {
+    color : rgba(255, 255, 255, 0.750)
+}
+
+nav {
+    background-color: #015958;
+    margin:0px;
+}
+
+nav > a {
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.700);
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: #02fdf9;
+}
+h2 {
+    color: #015958d0;
+    text-indent: 12.5px;
+    font-family: 'idroid'
+}
+
+h3 {
+    color: #008F8C;
+    background-color: #0fc2bf4f;
+    text-indent: 12.5px;
+    font-family: 'idroid'
+}
+
+main > p {
+    text-indent: 25px;
+    text-align: justify;
+}
+
+main > img {
+    height: 300px;
+    width: 1300px;
+    padding: auto;
+}
+
+main > p > a {
+    background-color: #008f8d8a;
+    text-decoration: none
+}
+
+main > p > a:hover {
+    text-decoration: underline;
+}
+
+img#um {
+    height: 300px;
+    width: 300px;
+    margin: 5px 450px 5px 450px
+}
+ 
+div#b {
+    background-color: #023535;
+    width: 1300px;
+    height: 650px
+}
+
+div#b > iframe {
+    padding: 0px;
+    margin: 25px 50px
+}
+
+footer {
+    background-color: white;
+    width: 1300px;
+    margin: 0px auto auto auto;
+    padding: 20px
+}
+/*rgba(175, 52, 3, 0.705)*/
+footer > h4 {
+    background-color: orange;
+    color: rgba(255, 255, 255, 0.767)
+}
+
+footer > p {
+    text-indent: 25px
+}
+
+footer > div >  p > a {
+    background-color: #008f8d8a;
+    text-decoration: none
+}
+
+footer > div > p > a:hover {
+    text-decoration: underline;
+}
+
+div#cor {
+    background-color: #0fc2bf4f;
+    padding: 10px;
+    border-radius: 5%
+}
+
+strong { 
+    color: #0caba8e5
+}
