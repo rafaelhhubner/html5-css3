@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        
+        table {
+            width: 500px; /* ESSA É A LARGURA DA TABELA INTEIRA E NÃO DE CADA DAD. ANIMAL, JUMENTO, BURRO, PACÓVIO, OTÁRIO, PALERMA!!!!!!!*/
+            height: 100px;
+            border-collapse: collapse;
+            text-align: center;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color:rgb(146, 146, 146)
+        }
+        td, th {
+            border: solid 1px black;
+            padding: 8px;
+        }
+        tbody > tr:nth-child(odd) {  /* 2n-1 ou 'odd' */
+                                     /* 2n ou 'even' */
+            background-color: rgba(97, 97, 97, 0.603)
+        }
+        
+        .posicao {
+            width: 75px
+        }
+
+        td.p {
+            width: 50px;
+        }
+
+        thead {
+            color:white;
+            background-color: rgb(70, 70, 70);
+            font-weight: bold;
+            font-size: 1.1em
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(70, 70, 70);
+            color:white; 
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+        CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    --> 
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="posicao">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col" class="p">% do País</th>
+            </tr>
+        </thead>    
+        <tbody>
+            <tr>
+                <td class="posicao">1°</td>
+                <td>SP</td>
+                <td>46.024.937</td>
+                <td class="p">22.2%</td>
+            </tr>
+            <tr>
+                <td class="posicao">2°</td>
+                <td>MG</td>
+                <td>20.732.660</td>
+                <td class="p">10.0%</td>
+            </tr>
+            <tr>
+                <td class="posicao">3°</td>
+                <td>RJ</td>	
+                <td>16.615.526</td>
+                <td class="p">8.0%</td>
+            </tr>
+            <tr>
+                <td class="posicao">4°</td>
+                <td>BA</td>
+                <td>14.659.023	</td>
+                <td class="p">7.1%</td>
+            </tr>
+            <tr>
+                <td class="posicao">5°</td>
+                <td>PA</td>
+                <td>11.835.379</td>
+                <td class="p">5.7%</td>
+            </tr>
+            <tr>
+                <td class="posicao">6°</td>
+                <td>RS</td>
+                <td>11.088.065</td>
+                <td class="p">5.3%</td>
+            </tr>
+            <tr>
+                <td class="posicao">7°</td>
+                <td>PE</td>
+                <td>9.051.113</td>
+                <td class="p">4.4%</td>
+            </tr>
+            <tr>
+                <td class="posicao">8°</td>
+                <td>CE</td>
+                <td>8.936.431</td>
+                <td class="p">4.3%</td>
+            </tr>
+            <tr>
+                <td class="posicao">9°</td>
+                <td>PA</td>
+                <td>8.442.962</td>
+                <td class="p">4.1%</td>
+            </tr>
+            <tr>
+                <td class="posicao">10°</td>
+                <td>SA</td>
+                <td>7.762.154</td>
+                <td class="p">3.7%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            
+        </tfoot>
+    </table>
+</body>
+</html>
