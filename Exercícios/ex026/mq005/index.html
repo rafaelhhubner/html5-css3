@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Document</title>
 </head>
-<body>
+<body onresize="mudou()">
     <header>
         <h1>
             Teste
@@ -70,8 +70,15 @@
     <script>
         function clicar() {
             if (itens.style.display == 'block') {
-                itens.style.display = 'none'} 
-            else {itens.style.display = 'block'}   
+                itens.style.display = 'none'
+            } else {itens.style.display = 'block'}   
+        }
+        function mudou() {
+            if (window.innerWidth >= 992) {
+                itens.style.display = 'inline-block'
+            } else {
+                itens.style.display = 'none'
+            }
         }
     </script>
 </body>
