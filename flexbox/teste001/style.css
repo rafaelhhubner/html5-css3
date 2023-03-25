@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+div.modulo {
+    width: 125px;
+    min-height: 125px;
+    text-align: center;
+}
+
+div#modulo-1 {
+    background-color:aqua;
+}
+
+div#modulo-2 {
+    background-color: greenyellow;
+}
+
+div#modulo-3 {
+    background-color: darkorchid;
+}

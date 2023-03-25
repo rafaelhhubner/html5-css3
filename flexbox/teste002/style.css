@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section#container {
+    margin: 30px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 15px 60px;
+}
+
+div {
+    text-align: center;
+    width: 250px;
+    height: 125px;
+}
+
+div.mod-1 {
+    background-color:crimson;
+}
+
+div.mod-2 {
+    background-color:forestgreen
+}
+
+div.mod-3 {
+    background-color:darkcyan
+}

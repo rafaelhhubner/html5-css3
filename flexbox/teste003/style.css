@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+section#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    text-align: center;
+    width: 250px;
+    height: 250px;
+}
+
+div#a1 {
+    background-color:deeppink;
+    color: darkblue;
+    order: 1
+}
+
+div#a2 {
+    background-color:tomato;
+    color:chartreuse;
+    order: -1
+}
+
+div#a3 {
+    background-color:brown;
+    color:dodgerblue;
+    order: 0
+}
